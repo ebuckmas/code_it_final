@@ -79,7 +79,9 @@
 
 .landing_content, .reviews, .listings, .footer_cont,
 .photo_grid_cont {
-    width: clamp(200px, 1100px, 1101px);
+    border: 1px solid black;
+    min-width: 375px;
+    max-width: 1100px;
     margin: auto;
     padding: 2%;
 }
@@ -384,6 +386,93 @@ img[src="images/footer_logo.png"] {
     
 }
 
+.secondary {
+    display: flex;
+    height: 175px;
+    width: 100vw;
+    align-items: center;
+}
+
+.photo_grid_cont h2 {
+    text-align: center;
+}
+
+/* .photo_grid {
+    min-width: 300px;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    
+} */
+
+.photo_grid {
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.grid_img {
+    width: 350px;
+    height: 350px;
+    vertical-align: middle;
+    object-fit: cover;
+    
+   
+}
+
+.grid_col1,
+.grid_col2,
+.grid_col3 {
+    min-width: 350px;
+    max-width: 33%;
+    row-gap: .5rem;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* .grid_col2 {
+    min-width: 350px;
+    max-width: 32%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_col3 {
+    min-width: 350px;
+    max-width: 32%;
+    
+    display: flex;
+    flex-direction: column;
+} */
+
+[src="images/buskirk.jpg"] {
+    /* grid-column: 2 / 3; */
+    /* grid-row: 1 / 3; */
+}
+
+[src="images/bluebird.jpg"] {
+    /* grid-row: 2 / 4; */
+}
+
+[src="images/monroe.jpg"] {
+    /* grid-column: 2 / 3; */
+    /* grid-row: 3 / 4; */
+}
+
+[src="images/farmers_market.jpg"] {
+    /* grid-column: 3 / 4;  */
+    /* grid-row: 2 / 4; */
+}
+    
+
 @media (max-width: 800px) {
     .nav {
         justify-content: center;
@@ -415,25 +504,16 @@ img[src="images/footer_logo.png"] {
     }
 }
 
-@media (max-width: 472px) {
+@media (max-width: 497px) {
    .landing {
     height: 600px;
+   }
+
+   .secondary {
+    height: 300px;
    }
 }
 
 
 
-.secondary {
-    display: flex;
-    height: 175px;
-    align-items: center;
-}
 
-.photo_grid_cont h2 {
-    text-align: center;
-}
-
-.photo_grid {
-    display: grid;
-    
-}
