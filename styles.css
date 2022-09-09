@@ -96,6 +96,23 @@ ul {
     
 }
 
+.nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:active {
+    color:#DC1C2E;
+}
+
+.nav a:visited {
+    color: white;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
 .nav_left {
     display: flex;
     flex-wrap: nowrap;
@@ -150,9 +167,9 @@ ul {
     
 } */
 
-.nav_links ul li:hover {
+/* .nav_links ul li:hover {
     color: rgb(212, 212, 212);
-}
+} */
 
 .grow {
     transition: transform .2s;
@@ -401,7 +418,7 @@ img[src="images/footer_logo.png"] {
     padding-top: 1.5rem;
 }
 
-.photo_grid_cont {
+.photo_grid_cont, .table.container {
     padding-top: 0;
 }
 
