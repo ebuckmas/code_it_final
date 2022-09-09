@@ -226,9 +226,13 @@ img[src="images/main_logo.png"] {
     height: auto;
 }
 
-.landing + h2 {
+h2 {
+    font-family: "Metropolis-Medium";
+    font-weight: 400;
     text-align: center;
     margin-top: 1em;
+    color:rgb(36, 40, 46);
+    
 }
 
 .reviews {
@@ -528,6 +532,13 @@ li a p {
     color: white;
 }
 
+#photo_credits_list {
+    font-size: .75rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
 
 /* .ov_txt p:last-child {
 
