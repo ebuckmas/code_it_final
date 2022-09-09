@@ -74,14 +74,9 @@ ul {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
     
-    
-    
-    
-
 }
 
-.landing_content, .reviews, .listings, .footer_cont,
-.photo_grid_cont {
+.container {
     border: 1px solid black;
     min-width: 350px;
     max-width: 1100px;
@@ -380,7 +375,7 @@ h2 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-    clip-path: polygon(0 22%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -394,7 +389,10 @@ img[src="images/footer_logo.png"] {
 }
 
 .secondary {
-    height: 110px;
+    height: 150px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+    
     
     
 }
@@ -540,11 +538,45 @@ li a p {
     gap: 5px;
 }
 
-/* .ov_txt p:last-child {
-
+table {
+    margin-left: auto;
+    margin-right: auto;
+    /* border-collapse: collapse; */
+    border: 2px solid rgb(200,200,200);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 1rem;
     
-    align-self: center;
-} */
+}
+
+td, th {
+    border: 1px solid rgb(190,190,190);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(235,235,235);
+}
+  
+td {
+    text-align: center;
+}
+
+td:before {
+    content: "$";
+    float: left;
+}
+
+caption {
+    font-family: "Metropolis-Bold";
+    padding-bottom: 1rem;
+}
+
+.table_highlight {
+    background-color: rgba(7, 78, 154, 0.514);
+    font-family: "Metropolis-Bold";
+}
     
 
 @media (max-width: 800px) {
@@ -561,7 +593,7 @@ li a p {
 
 @media (max-width: 774px) {
     .secondary {
-        height: 160px;
+        height: 200px;
     }
 }
 
@@ -592,7 +624,7 @@ li a p {
     }
     
     .secondary {
-        height: 180px;
+        height: 220px;
     }
 }
 
@@ -602,10 +634,16 @@ li a p {
    }
 
    .secondary {
-    height: 180px;
+    height: 220px;
    }
 
    
+}
+
+@media (max-width: 375px) {
+    .secondary {
+        height: 240px;
+    }
 }
 
 
