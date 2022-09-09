@@ -635,6 +635,20 @@ caption {
     }
 }
 
+.contact.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form {
+    flex-basis: 100%;
+}
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 527px) {
     .landing {
         height: 575px;
