@@ -356,14 +356,16 @@ h2 {
       
 }
 
-.listing_img_cont p {
+.sold {
     position: absolute;
-    left: 0px;
+    z-index: 2;
+    /* left: 0px; */
     top: 0px;
     color: white;
     padding: 15px;
     margin: 0;
     background-color: rgba(255, 0, 0, 0.658);
+    border-top-left-radius: 5px;
     font-family: "Metropolis-Bold";
     font-size: 2rem;
 }
@@ -402,8 +404,28 @@ h2 {
 }
 
 .listing_vid_iframe {
-    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 5px;
 }
+
+.iframe_cont {
+    position: relative;
+}
+
+
+
+.main_iframe {
+    border-radius: 5px;
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+}
+
+
+
 
 .footer {
     margin-top: 2rem;
@@ -412,7 +434,7 @@ h2 {
     linear-gradient(to top, rgba(220, 28, 47, 0.9), rgb(0, 0, 0, .8)),
     url("images/web22-3.jpg");
     background-size: cover;
-    background-position: 95%;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
