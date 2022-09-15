@@ -1,4 +1,2 @@
-.grow {
-    transition: all .2s ease-in-out;
-}
+// file for future JS integrations
 
