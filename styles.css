@@ -63,7 +63,7 @@ ul {
 
 
 .landing {
-    height: 538px;
+    height: 500px;
     background:
     linear-gradient(to bottom, rgb(7, 78, 154, .9), rgb(0, 0, 0, .8)),
     url("images/header_bg.jpg");
@@ -71,8 +71,8 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); */
     
 }
 
@@ -80,7 +80,9 @@ ul {
     /* border: 1px solid black; */
     min-width: 350px;
     max-width: 1100px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     padding: 1%;
 }
 
@@ -187,7 +189,7 @@ ul {
 }
 
 .header {
-    padding-top: 5%;
+    padding-top: 4%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -215,14 +217,12 @@ ul {
 
 .header_txt h1 span {
     font-size: 2.15rem;
-    
     color: rgb(220, 28, 47);
-    
-    
-    
-    
 }
 
+.ten_years {
+    font-family: "Metropolis-Bold";
+}
 
 
 .header_buttons button {
@@ -253,15 +253,24 @@ img[src="images/main_logo.png"] {
 
 h2 {
     font-family: "Metropolis-SemiBold";
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 1em;
+    
     color: rgb(7, 78, 154);
     
 }
 
+h2.container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 40px;
+}
+
 .reviews {
-    margin-top: 1em;
+    margin-top: 20px;
+    /* padding-top: 40px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
@@ -334,7 +343,8 @@ h2 {
 
 .listings > h2 {
     text-align: center;
-    padding-bottom: 1%;
+    padding-bottom: 20px;
+    
     
 }
 
@@ -429,7 +439,7 @@ h2 {
 
 .footer {
     margin-top: 2rem;
-    height: 250px;
+    height: 200px;
     background:
     linear-gradient(to top, rgba(220, 28, 47, 0.9), rgb(0, 0, 0, .8)),
     url("images/web22-3.jpg");
@@ -437,8 +447,8 @@ h2 {
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%);
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,17 +461,16 @@ h2 {
 }
 
 img[src="images/footer_logo.png"] {
+    max-height: 60%;
     max-width: 90%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    
     
 }
 
 .secondary {
-    height: 150px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+    height: 100px;
+    /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%); */
     
     
     
@@ -471,16 +480,23 @@ img[src="images/footer_logo.png"] {
     padding-top: 1.5rem;
 }
 
-.photo_grid_cont, .table.container {
+
+
+.photo_grid_cont {
     padding-top: 0;
 }
 
+.table.container {
+    padding-top: 20px;
+}
+
 .photo_grid_cont h2 {
+    margin-top: 40px;
     text-align: center;
 }
 
 .photo_grid {
-    margin-top: 2.5rem;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -650,7 +666,7 @@ caption {
 }
 
 .contact.container {
-    padding-top: 1rem;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
