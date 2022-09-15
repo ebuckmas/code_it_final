@@ -127,7 +127,7 @@ ul {
 
 .nav_left h2 {
   color: white;
-  font-family: "Metropolis-SemiBold";
+  font-family: "Metropolis-Medium";
   font-size: 1.25rem;
   white-space: nowrap;
 }
@@ -278,7 +278,7 @@ img[src="images/main_logo.png"] {
 }
 
 h2 {
-  font-family: "Metropolis-SemiBold";
+  font-family: "Metropolis-Medium";
   font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
@@ -530,7 +530,7 @@ li a {
 
 li a p {
   color: white;
-  font-family: "Metropolis-SemiBold";
+  font-family: "Metropolis-Medium";
   font-size: 2rem;
   position: absolute;
   margin-block-start: 0;
@@ -681,7 +681,7 @@ caption {
 label,
 fieldset {
   color: rgb(7, 78, 154);
-  font-family: "Metropolis-SemiBold";
+  font-family: "Metropolis-Medium";
 }
 
 input {
