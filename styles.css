@@ -188,6 +188,7 @@ ul {
 }
 
 .menu {
+  font-family: "Metropolis-Medium";
   color: white;
   list-style: none;
   display: flex;
@@ -300,6 +301,10 @@ h2.container {
   gap: 2em;
 }
 
+.reviews.container {
+    padding: 10px 0 0 0;
+}
+
 .reviews.flex {
   display: flex;
   flex-direction: column;
@@ -359,7 +364,7 @@ h2.container {
 }
 
 .listings {
-  padding-top: 0;
+  padding-top: 20px;
 }
 
 .listings > h2 {
@@ -465,9 +470,8 @@ h2.container {
   align-items: center;
 }
 
-.footer_cont.container {
-  display: flex;
-  justify-content: center;
+.footer.secondary {
+    height: 200px
 }
 
 img[src="images/footer_logo.png"] {
