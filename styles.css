@@ -835,6 +835,10 @@ textarea {
     height: 515px;
   }
 
+  .landing.secondary {
+    height: 100px;
+  }
+
   .header_txt h1,
   .header_txt h1 span {
     font-size: 1.75rem;
@@ -843,7 +847,8 @@ textarea {
 
 @media (max-width: 374px) {
   .container {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .menu-button-container {
